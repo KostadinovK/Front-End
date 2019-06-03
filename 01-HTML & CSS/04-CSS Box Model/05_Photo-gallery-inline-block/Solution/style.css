@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.gallery{
+    padding: 12rem;
+}
+
+.gallery li{
+    border: 0.4rem solid black;
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.gallery li img{
+    width: 100%;
+    height: auto;
+}
