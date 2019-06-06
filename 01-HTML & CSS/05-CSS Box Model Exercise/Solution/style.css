@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700|Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: PT Sans, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body{
+    max-width: 100%;
+}
+
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: PT Serif, serif;
+    margin-bottom: 0.6em;
+}
+
+h1{font-size: 3.3rem;}
+h2{font-size: 2.9rem;}
+h3{font-size: 2.5rem;}
+h4{font-size: 2.1rem;}
+h5{font-size: 1.6rem;}
+h6{font-size: 1.2rem;}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+header{
+    background-color: rgb(241, 245, 248);
+    padding: 1rem 0;
+}
+
+header .site-title{
+    font-family: Pacifico;
+    font-size: 1.5rem;
+    color: rgb(255, 127, 80);
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 60%;
+}
+
+header nav,
+header nav ul{
+    display: inline-block;
+}
+
+header nav ul li{
+    background-color: rgb(255, 127, 80);
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+header nav ul li:not(:last-child){
+    margin-right: 1rem;
+}
+
+header nav ul li a:before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f015';
+    margin-right: 0.4rem;
+}
+
+header nav ul li:nth-child(2) a::before{
+    content: '\f2bb';
+}
+
+header nav ul li:nth-child(3) a::before{
+    content: '\f183';
+}
+
+header nav ul li:nth-child(4) a::before{
+    content: '\f781';
+}
+
+header nav ul li:nth-child(5) a::before{
+    content: '\f2b9';
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+section.site-main{
+    max-width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../Requirements-and-Resources/img/header-flowers.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    padding: 20rem 10rem;
+    text-align: center;
+}
+
+section.site-main h1{
+    max-width: 50%;
+    margin: 1rem auto;
+}
+
+section.site-main p{
+    max-width: 35%;
+    margin: 0 auto;
+}
+
+section.site-info{
+    background-color: rgb(255, 127, 80);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+section.site-info h2{
+    text-transform: uppercase;
+}
+
+section.site-info p{
+    max-width: 40%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+section.site-info button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 127, 80);
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 0.4rem;
+}
+
+section.site-info button:hover{
+    background-color: rgb(255, 127, 80);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+section.site-how-it-works{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+section.site-how-it-works ul li{
+    max-width: 30%;
+    vertical-align: middle;
+}
+
+section.site-how-it-works ul li img{
+    max-width: 140px;
+    height: auto;
+    margin-bottom: 0.6rem;
+}
+
+section.site-how-it-works ul li p{
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+section.site-gallery{
+    text-align: center;
+    padding: 2rem 0;
+    background-color: rgba(255, 127, 80, 0.2);
+}
+
+section.site-gallery ul li{
+    border: 2px solid rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    padding: 1rem;
+    max-width: 30%;
+    vertical-align: middle;
+    margin: 1rem;
+}
+
+section.site-gallery img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer{
+    background-color: rgb(255, 127, 80);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p{
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin-right: 4rem;
+}
+
+footer ul{
+    display: inline-block;
+}
+
+footer ul li{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+footer ul li a::after{
+    font-family: 'Font Awesome 5 Brands';
+    content: '\f39e';
+    margin-right: 0.4rem;
+}
+
+footer ul li:nth-child(2) a::after{
+    content: '\f099';
+}
+
+footer ul li:nth-child(3) a::after{
+    content: '\f09b';
+}
+
+footer ul li:not(:last-child){
+    margin-right: 0.5rem;
+}
