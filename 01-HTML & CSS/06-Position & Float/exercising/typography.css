@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700&display=swap');
+
+html{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'PT Serif', serif;
+}
+
+input, textarea, label{
+    font-family: inherit;
+}

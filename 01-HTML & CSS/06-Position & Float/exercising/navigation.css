@@ -1,0 +1,53 @@
+nav{
+    margin: 1rem 0;
+    background-color: rgb(0, 0, 0);
+}
+
+nav ul li{
+    list-style-type: none;
+    border-radius: 5px;
+    padding: 0.2rem;
+}
+
+nav > ul > li{
+    float: left;
+    padding: 1rem;
+}
+
+nav > ul > li:not(:last-child){
+    margin-right: 1rem;
+}
+
+nav > ul > li:hover{
+    background-color: rgb(238, 0, 0);
+    cursor: pointer;
+    position: relative;
+}
+
+nav li:hover > a,
+nav li:hover{
+    background-color: rgb(238, 0, 0);
+    cursor: pointer;
+}
+
+nav > ul > li ul{
+    display: none;
+    z-index: 100;
+}
+
+nav > ul > li > ul li{
+    padding: 0.2rem 1rem;
+}
+
+nav ul li:hover > ul{
+   display: block;
+   position: absolute;
+   background: rgb(0, 0, 0);
+   left: 0;
+   top: 100%;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}

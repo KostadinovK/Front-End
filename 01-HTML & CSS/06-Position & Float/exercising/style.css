@@ -1,0 +1,88 @@
+@import url(reset.css);
+@import url(typography.css);
+@import url(navigation.css);
+
+body{
+    padding: 1rem 20rem;
+}
+
+.cleaner:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+header{
+    position: relative;
+}
+
+header > section{
+    position: absolute;
+    top: 20%;
+    right: 0%;
+}
+
+main article{
+    max-width: 60%;
+    float: left;
+    padding: 0rem 2rem;
+}
+
+main article h2{
+    margin-bottom: 1rem;
+}
+
+.media{
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+    border: 1px solid white;
+    position: relative;
+}
+
+.media::before{
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+}
+
+.media::after{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+main article .media img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main article p{
+    margin-bottom: 1rem;
+}
+
+main aside{
+    max-width: 40%;
+    float: left;
+    margin-left: 2rem;
+}
+
+main aside ul{
+    padding-left: 2rem;
+}
+
+
+footer{
+    border-top: 2px solid grey;
+}
