@@ -49,27 +49,35 @@ img{
     height: auto;
 }
 
-.container{
+.masonry{
     display: flex;
+    width: 30%;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: space-evenly;
+    height: 350vh;
 }
 
-.masonry{
-    flex: 1 1 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: space-between;
+.masonry:after{
+    display: block;
+    content: '';
+    flex: 0 0 30%;
+    margin-bottom: 1rem;
+}
+
+
+.masonry h2{
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
 }
 
 .masonry .card{
-    flex: 0 0 10%;
+    flex: 0 0 20%;
+    margin-bottom: 1rem;
 }
 
 .flex{
-    flex: 0 0 60%;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
