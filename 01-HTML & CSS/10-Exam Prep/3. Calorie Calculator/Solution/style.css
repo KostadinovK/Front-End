@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+img{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+img:after{
+    display: block;
+    content: '';
+    padding-top: 100%;
+}
+
+h1{
+    text-align: center;
+    color: rgb(76, 76, 76);
+    margin-bottom: 2rem;
+}
+
+.container{
+    width: 60%;
+    margin: 4rem auto;
+    border: 2px solid gray;
+    display: flex;
+    max-height: 600px;
+}
+
+.media{
+    overflow: hidden;
+    flex: 0 0 50%;
+    position: relative;
+}
+
+.content{
+    flex: 0 0 50%;
+    background-color: rgb(246, 247, 248);
+    padding: 2rem 1rem;
+}
+
+.units{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.units p{
+    padding: 0.5rem;
+    background: rgb(239, 229, 98);
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+.units p:last-child{
+    background: rgb(224, 224, 223);
+}
+
+.wrapper{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.gender-age-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.gender-wrapper, .age-wrapper{
+    flex: 0 0 45%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gender-wrapper label, .age-wrapper label{
+    flex: 0 0 100%;
+}
+
+.gender-wrapper select, .age-wrapper input{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+label{
+    color: rgb(76, 76, 76);
+    font-size: 1.4em;
+}
+
+input, select{
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+input::placeholder{
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.weight-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.weight-wrapper input{
+    flex: 1 1 100%;
+}
+
+.height-feet-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 45%;
+}
+
+.height-feet-wrapper label{
+    flex: 1 1 100%;
+}
+
+.height-inches-wrapper{
+    flex: 0 0 45%;
+    display: flex;
+    justify-content: center;
+}
+
+input[type='submit']{
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(5, 162, 211);
+    color: white;
+    font-size: 1.4em;
+}
