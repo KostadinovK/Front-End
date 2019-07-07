@@ -1,0 +1,191 @@
+@media (max-width: 1024px){
+    .site-logos { 
+        padding: 1rem 0;
+        width: 90%;
+        margin: 0 auto;    
+    }
+
+    .site-logos-container {
+        display: flex;  
+    }
+      
+    .site-logo {
+        color: #FF8F57;   
+        display: block;
+        margin: 0;
+        letter-spacing: 0;
+    }
+      
+    .site-logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .site-logo span {
+        font-size: 0.8em;
+    }
+
+    .site-information {
+        background-size: 75px 100px;
+        color: #fff;
+        text-shadow: 1px 1px 1px rgb(122, 121, 121);    
+    }
+      
+    .site-information-text {
+        flex: 1 1 30%;
+        padding: 4rem 2rem;
+    }
+      
+    .site-information-image {
+        flex: 1 1 70%;
+        margin: 1rem;
+    }
+
+    .site-post {
+        flex: 0 0 30%;
+        border: 2px solid #FF8F57;
+        margin-top: 1.5rem;
+        border-radius: 15px;
+        overflow: hidden;  
+    }
+
+    .site-post h2 {
+        font-size: 1em;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+        padding: 0 1rem;
+    }
+
+    .site-post h2 a {
+        font-size: 0.8em;
+    }
+      
+    .site-post p {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    .site-navigation{
+        display: none;
+    }
+
+    .entry-header-title{
+        font-size: 4rem;
+    }
+
+    .entry-header {   
+        display: flex;
+        position: relative;
+
+    }
+
+    .entry-header-title {   
+        font-size: 0.5em;
+
+    }
+      
+      .entry-header-container p {
+        flex: 1 1 100%;
+      }
+      
+      .entry-header-title {  
+        font-size: 2rem;
+      }
+      
+      .entry-header-title::first-letter {
+        font-size: 6rem;
+      }
+      
+      .entry-header-description {
+        position: absolute;
+        top: 5%;
+        left: 16%;
+      }
+
+    .site-logos-container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;  
+    }
+      
+    .site-logo {
+        flex: 0 0 30%;
+    }
+
+    .site-logo:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .site-information-text {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .site-information-image {
+        display: none;
+    }
+
+    .site-information-text h2, .site-information-text h5{
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .site-information-text button{
+        align-content: center;
+    }
+
+    .site-information-text p{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .site-form form > p {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .site-form form > p label {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+
+    .site-form button {
+        background: #329A8F;
+        padding: 0.8rem 3rem;
+        margin: 0 auto;
+    }
+
+
+    .site-posts{
+        flex-wrap: wrap;
+    }
+
+    .site-post {
+        flex: 0 0 80%;
+        border: 2px solid #FF8F57;
+        margin-top: 1.5rem;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    h2.entry-title{
+        font-size: 2rem;
+    }
+
+    .site-footer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .site-footer p{
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
